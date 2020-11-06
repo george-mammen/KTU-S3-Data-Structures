@@ -40,6 +40,6 @@ void main(){
         }
         }
         if(flag == -1) {
-            printf("\n The element %d is does not exist in the array",a);
+            printf("\n The element %d does not exist in the array",a);
     }
 }
