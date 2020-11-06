@@ -1,4 +1,4 @@
-# KTU-S3-Data-Structures
+# KTU-S3- Data Structures
 
 ➼ Binary Search
 
