@@ -1,13 +1,12 @@
 #include<stdio.h>
 
 void main(){
-    int n ;
-    int arr[n];
-    int a;
+    int n,a;
     int flag = -1;
     
     printf("\n Enter the number of elements in the array :");
     scanf("%d",&n);
+    int arr[n];
     
     printf("\n Enter the elements of the array :");
     for(int i=0;i<n;i++) {
@@ -36,10 +35,10 @@ void main(){
     for(int i = 0;i < n;i++) {
         if(arr[i] == a) {
             flag = 1;
-            printf("\n The element %d is at the %dth position",a,i);
+            printf("\n The element %d is at the %dth position",a,i+1);
         }
         }
-        if(flag == -1) {
+    if(flag == -1) {
             printf("\n The element %d does not exist in the array",a);
     }
 }
