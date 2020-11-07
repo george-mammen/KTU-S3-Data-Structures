@@ -1,12 +1,11 @@
 #include<stdio.h>
 
 void main(){
-    int n ;
-    int arr[n];
-    int a;
+    int n,a ;
     
     printf("\n Enter the number of elements in the array :");
     scanf("%d",&n);
+    int arr[n];
     
     printf("\n Enter the elements of the array :");
     for(int i=0;i<n;i++) {
