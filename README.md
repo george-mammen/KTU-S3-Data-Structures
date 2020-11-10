@@ -6,7 +6,7 @@
 
 ➼ Bubble Sort : Sorting an array
 
-➼
+➼ Stack : Implementation of Stack using Arrays
 
 ➼
 
