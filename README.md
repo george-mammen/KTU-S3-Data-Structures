@@ -8,26 +8,59 @@
           
 ➼ Sort :
 
-              ➼ Bubble Sort : Sorting an array
+              ➼ Bubble Sort : Sorting an array.
 
+➼ Polynomial : 
 
+              ➼ Sum of two Polynomials taking user input.
+              
+➼ Matrix : 
 
-➼ 
+              ➼ Converting Matrices and Transform of Matrices into tuples.
 
-➼ Stack : Implementation of Stack using Arrays
+➼ Circular Queue : 
 
-➼
+              ➼ Insert an element to the Queue.
+              
+              ➼ Delete an element from the Queue.
+              
+              ➼ Display the contents of the Queue after each operation.
+              
 
-➼
+➼ Queue : 
 
-➼
+              ➼ Insert elements to the Queue.
+              
+              ➼ Delete elements from the Queue.
+              
+              ➼ Display the contents of the queue after each operation.
+              
 
-➼
+➼ Stack : 
 
-➼
+              ➼ Pushing elements to the Stack.
+              
+              ➼ Popping elements from the Stack
+              
+              ➼ Display the contents of the Stack after each operation.
+              
+➼ Priority Queue : 
 
-➼
+              ➼ Insert elements to the Priority Queue.
+              
+              ➼ Delete elements from the Priority Queue.
+              
+              ➼ Display the contents of the Priority Queue after each operation.
+              
+➼ Double-Ended Queue : 
 
-➼
+              ➼ Insert elements to the Front of the Queue.
+              
+              ➼ Insert elements to the Rear of the Queue.
+              
+              ➼ Delete elements from the Front of the Queue.  
+              
+              ➼ Delete elements from the Rear of the Queue.
+              
+              ➼ Display the queue after each operation.
 
-➼
