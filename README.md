@@ -1,24 +1,24 @@
 # KTU-S3- Data Structures
 
-➼ Search : 
+ Search : 
 
               ➼ Binary Search : Traversing through Sorted Array inorder to extract required position of query element in array.
               
               ➼ Linear Search : Traversing through Array inorder to extract required position of query element in the array.
           
-➼ Sort :
+ Sort :
 
               ➼ Bubble Sort : Sorting an array.
 
-➼ Polynomial : 
+ Polynomial : 
 
               ➼ Sum of two Polynomials taking user input.
               
-➼ Matrix : 
+ Matrix : 
 
               ➼ Converting Matrices and Transform of Matrices into tuples.
 
-➼ Circular Queue : 
+ Circular Queue : 
 
               ➼ Insert an element to the Queue.
               
@@ -27,7 +27,7 @@
               ➼ Display the contents of the Queue after each operation.
               
 
-➼ Queue : 
+ Queue : 
 
               ➼ Insert elements to the Queue.
               
@@ -36,7 +36,7 @@
               ➼ Display the contents of the queue after each operation.
               
 
-➼ Stack : 
+ Stack : 
 
               ➼ Pushing elements to the Stack.
               
@@ -44,7 +44,7 @@
               
               ➼ Display the contents of the Stack after each operation.
               
-➼ Priority Queue : 
+ Priority Queue : 
 
               ➼ Insert elements to the Priority Queue.
               
@@ -52,7 +52,7 @@
               
               ➼ Display the contents of the Priority Queue after each operation.
               
-➼ Double-Ended Queue : 
+ Double-Ended Queue : 
 
               ➼ Insert elements to the Front of the Queue.
               
