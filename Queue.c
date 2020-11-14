@@ -51,8 +51,9 @@ int main() {
     printf("\n Enter the size of the Queue :");
     scanf("%d", &n);
     printf("\n Operations to perform using Queue :");
-    printf("\n \t 1.Enqueue \n \t 2.Dequeue \n \t 3.Display \n \t 4.Exit");
+    
     do {
+        printf("\n \t 1.Enqueue \n \t 2.Dequeue \n \t 3.Display \n \t 4.Exit");
         printf("\n \n Enter the required option :");
         scanf("%d", &option);
 
