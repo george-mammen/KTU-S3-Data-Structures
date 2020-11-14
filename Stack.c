@@ -1,76 +1,85 @@
 #include<stdio.h>
 
-int stack[100],top = -1,n,x;
+int queue[100],front =-1,rear = -1,n,x;
 
-void push() {
-    if(top == n-1) {
-        printf("\n Stack has overflowed");
+void enqueue() {
+    if(rear == n-1) {
+        printf("\n The Queue is full.");
     }
     else {
-        printf("Enter the required value to add into the Stack :");
+        printf("\n Enter the element required to add to the Queue :");
         scanf("%d",&x);
-        top++ ;
-        stack[top] = x;
+        if(front == -1){
+            front = rear = 0;
+        }
+        else {
+            rear++ ;
+        }
+        queue[rear] = x;
+        printf("\n The element has been added to the queue.")
     }
 }
 
-void pop() {
-    if(top <= -1) {
-        printf("\n Stack does not have elements.");
+void dequeue() {
+    if(front = -1 ){
+        printf("The Queue is empty.");
     }
     else {
-        printf("\n The element popped is %d",stack[top]);
-        top-- ;
+        printf("The deleted element from the Queue is %d",queue[front]);
+        if(front == rear){
+            front = rear = -1 ;
+        }
+        else {
+            front++;
+        }
     }
 }
 
 void display() {
-    if (top <= -1)
-    {
-        printf("\n Stack does not have elements.");
+    if (front = -1) {
+        printf("The Queue is empty.");
     }
-    else
-    {
-        printf("\n The elements of the stack are :");
-        for (int i = top; i >= 0; i--){
-            printf("\n %d",stack[i]);
+    else {
+        for(int i = front; i <= rear;i++){
+            printf("%d\n", queue[i]);
         }
     }
 }
 
 int main() {
     int option;
-    printf("\n Enter the size of the Stack :");
-    scanf("%d",&n);
-    printf("\n Operations to perform using Stack :");
-    printf("\n \t 1.Push \n \t 2.Pop \n \t 3.Display \n \t 4.Exit");
-    printf("\n \n Enter the required option :");
-    scanf("%d",&option);
-    
-    switch(option) {
-        case 1: {
-            push();
-            break;
-        }
+    printf("\n Enter the size of the Queue :");
+    scanf("%d", &n);
+    printf("\n Operations to perform using Queue :");
+    printf("\n \t 1.Enqueue \n \t 2.Dequeue \n \t 3.Display \n \t 4.Exit");
+    do {
+        printf("\n \n Enter the required option :");
+        scanf("%d", &option);
 
-        case 2: {
-            pop();
-            break;
-        }
+        switch (option) { 
+            case 1: {
+                enqueue();
+                break;
+            }
 
-        case 3: {
-            display();
-            break;
-        }
+            case 2: {
+                dequeue();
+                break;
+            }
 
-        case 4: {
-            break;
-        }
+            case 3: {
+                display();
+                break;
+            }
+            
+            case 4: {
+                break;
+            }
 
-        default: {
-            printf("/n Enter a valid option !");
+            default: {
+                printf("\n Enter a valid option !");
+            }
         }
-    }
+    } while (option != 4);
 }
-  
-
+    
