@@ -1,69 +1,61 @@
 #include<stdio.h>
 
-int queue[100],front =-1,rear = -1,n,x;
+int stack[100],top = -1,n,x;
 
-void enqueue() {
-    if(rear == n-1) {
-        printf("\n The Queue is full.");
+void push() {
+    if(top == n-1) {
+        printf("\n Stack has overflowed");
     }
     else {
-        printf("\n Enter the element required to add to the Queue :");
+        printf("Enter the required value to add into the Stack :");
         scanf("%d",&x);
-        if(front == -1){
-            front = rear = 0;
-        }
-        else {
-            rear++ ;
-        }
-        queue[rear] = x;
-        printf("\n The element has been added to the queue.")
+        top++ ;
+        stack[top] = x;
     }
 }
 
-void dequeue() {
-    if(front = -1 ){
-        printf("The Queue is empty.");
+void pop() {
+    if(top <= -1) {
+        printf("\n Stack does not have elements.");
     }
     else {
-        printf("The deleted element from the Queue is %d",queue[front]);
-        if(front == rear){
-            front = rear = -1 ;
-        }
-        else {
-            front++;
-        }
+        printf("\n The element popped is %d",stack[top]);
+        top-- ;
     }
 }
 
 void display() {
-    if (front = -1) {
-        printf("The Queue is empty.");
+    if (top <= -1)
+    {
+        printf("\n Stack does not have elements.");
     }
-    else {
-        for(int i = front; i <= rear;i++){
-            printf("%d\n", queue[i]);
+    else
+    {
+        printf("\n The elements of the stack are :");
+        for (int i = top; i >= 0; i--){
+            printf("\n %d",stack[i]);
         }
     }
 }
 
 int main() {
     int option;
-    printf("\n Enter the size of the Queue :");
-    scanf("%d", &n);
-    printf("\n Operations to perform using Queue :");
-    printf("\n \t 1.Enqueue \n \t 2.Dequeue \n \t 3.Display \n \t 4.Exit");
+    printf("\n Enter the size of the Stack :");
+    scanf("%d",&n);
+    printf("\n Operations to perform using Stack :");
     do {
+        printf("\n \t 1.Push \n \t 2.Pop \n \t 3.Display \n \t 4.Exit");
         printf("\n \n Enter the required option :");
-        scanf("%d", &option);
+        scanf("%d",&option);
 
-        switch (option) { 
+        switch(option) {
             case 1: {
-                enqueue();
+                push();
                 break;
             }
 
             case 2: {
-                dequeue();
+                pop();
                 break;
             }
 
@@ -71,15 +63,14 @@ int main() {
                 display();
                 break;
             }
-            
+
             case 4: {
                 break;
             }
 
             default: {
-                printf("\n Enter a valid option !");
+                printf("/n Enter a valid option !");
             }
         }
-    } while (option != 4);
+    } while (option !=4);
 }
-    
