@@ -67,7 +67,7 @@ int main() {
             break;
         }
 
-        defualt: {
+        default: {
             printf("/n Enter a valid option !");
         }
     }
