@@ -16,7 +16,7 @@
               
  Matrix : 
 
-              ➼ Converting Matrices and Transform of Matrices into tuples.
+              ➼ Representation of the Sum of two matrices and the individual matrices in tuple form  along with the same for their transpose form
 
  Circular Queue : 
 
