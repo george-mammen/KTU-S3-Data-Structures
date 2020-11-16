@@ -2,9 +2,11 @@
 
  Search : 
 
-              ➼ Binary Search : Traversing through Sorted Array inorder to extract required position of query element in array.
+              ➼ Binary Search : Traversing through Sorted Array inorder to extract required position of 
+                                 query element in array.
               
-              ➼ Linear Search : Traversing through Array inorder to extract required position of query element in the array.
+              ➼ Linear Search : Traversing through Array inorder to extract required position of 
+                                 query element in the array.
           
  Sort :
 
@@ -16,7 +18,8 @@
               
  Matrix : 
 
-              ➼ Representation of the Sum of two matrices and the individual matrices in tuple form  along with the same for their transpose form
+              ➼ Representation of the Sum of two matrices and the individual matrices in tuple form  
+                 along with the same for their transpose form.
 
  Circular Queue : 
 
