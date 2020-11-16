@@ -21,7 +21,7 @@ void enqueue()
             rear = (rear + 1) % n ;
         }
         cqueue[rear] = x;
-        printf("\n The element has been added to the queue.")
+        printf("\n The element has been added to the queue.");
     }
 }
 
@@ -47,14 +47,14 @@ void dequeue()
 
 void display()
 {
-    i = front;
+    int i = front;
     if (front == -1)
     {
         printf("The Queue is empty.");
     }
     else
     {
-        printf("\n The Circular Queue is : ")
+        printf("\n The Circular Queue is : ");
         while (i != rear){
             printf(" %d",cqueue[i]);
             i = (i + 1) % n ;
@@ -107,4 +107,3 @@ int main()
         }
     } while (option != 4);
 }
-
