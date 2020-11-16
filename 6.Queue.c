@@ -21,7 +21,7 @@ void enqueue() {
 }
 
 void dequeue() {
-    if(front = -1 ){
+    if(front == -1 ){
         printf("The Queue is empty.");
     }
     else {
@@ -36,7 +36,7 @@ void dequeue() {
 }
 
 void display() {
-    if (front = -1) {
+    if (front == -1) {
         printf("The Queue is empty.");
     }
     else {
