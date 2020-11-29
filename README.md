@@ -66,4 +66,13 @@
               ➼ Delete elements from the Rear of the Queue.
               
               ➼ Display the queue after each operation.
+              
+ Expression : 
+
+              ➼ Converting an Infix to a Postfix Expression using Stack.
+              
+              ➼ Converting an Infix to a Prefix Expression using Stack.
+              
+              ➼ Converting an Infix to a Postfix Expression without using Stack.
+ 
 
