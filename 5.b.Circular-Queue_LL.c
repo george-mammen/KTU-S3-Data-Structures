@@ -11,7 +11,7 @@ struct node
 struct node *front = 0;
 struct node *rear = 0;
 
-void push() {
+void enqueue() {
     int x;
     printf("\n Enter the required number to be added to the Queue:");
     scanf("%d",&x);
@@ -32,21 +32,21 @@ void push() {
     }
 }
 
-void pop() {
+void dequeue() {
     if ((front == 0) && (rear == 0))
     {
-        printf("\n UNDERFLOW\n");
+        printf("\n Underflow !!");
     }
     else if (front == rear)
     {
-        printf("The deleted element is: %d\n", front->data);
+        printf(" \n The deleted element is: %d", front->data);
         front = rear = NULL;
     }
     else
     {
         struct node *temp;
         temp = front;
-        printf("The deleted element is %d\n", temp->data);
+        printf("\n The deleted element is %d", temp->data);
         front = front->next;
         rear->next = front;
         free(temp);
@@ -58,9 +58,9 @@ void display() {
     temp = front;
     if ((front == 0) && (rear == 0))
     {
-        printf("\nUNDERFLOW\n");
+        printf("\n Underflow !!");
     }
-    printf("The elements of the queue are : ");
+    printf("The elements of the Circular Queue are : ");
     while (temp->next != front)
     {
         printf("%d\t", temp->data);
@@ -72,10 +72,10 @@ void display() {
 
 void main() {
     int option;
-    printf("\n Operations to perform using Stack :");
+    printf("\n Operations to perform using Circular Queue :");
     do
     {
-        printf("\n \t 1.Push \n \t 2.Pop \n \t 3.Display \n \t 4.Exit");
+        printf("\n \t 1.Enqueue \n \t 2.Dequeue \n \t 3.Display \n \t 4.Exit");
         printf("\n \n Enter the required option :");
         scanf("%d", &option);
 
@@ -83,13 +83,13 @@ void main() {
         {
         case 1:
         {
-            push();
+            enqueue();
             break;
         }
 
         case 2:
         {
-            pop();
+            dequeue();
             break;
         }
 
