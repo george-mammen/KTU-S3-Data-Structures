@@ -10,7 +10,10 @@
           
  Sort :
 
-              ➼ Bubble Sort : Sorting an array.
+              ➼ Bubble Sort 
+              
+              ➼ Selection Sort
+              
 
  Polynomial : 
 
