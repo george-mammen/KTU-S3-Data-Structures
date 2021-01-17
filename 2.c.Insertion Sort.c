@@ -25,10 +25,10 @@ void InsertionSort(int arr[], int n) {
     for (i = 1;i < n;i++) {
         temp = arr[i];
         j = i - 1;
-        while (arr[j] > temp && j >= 0)
+        if (arr[j] > temp && j >= 0)
         {
             arr[j + 1] = arr[j];
-            --j;
+            j--;
         }
         arr[j + 1] = temp;
     }
