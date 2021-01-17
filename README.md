@@ -14,6 +14,8 @@
               
               ➼ Selection Sort
               
+              ➼ Insertion Sort
+              
 
  Polynomial : 
 
